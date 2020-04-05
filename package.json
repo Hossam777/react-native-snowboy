@@ -1,0 +1,62 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+      "C:\\Users\\alexm\\Desktop\\Mohsen"
+    ]
+  ],
+  "_from": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+  "_id": "react-native-snowboy@git+https://github.com/Gamal-Khaled/react-native-snowboy.git#fbcaaa289ada750657884766207f7a17f74ef4d0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-snowboy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+    "rawSpec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+    "saveSpec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+    "fetchSpec": "https://github.com/Gamal-Khaled/react-native-snowboy.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git#fbcaaa289ada750657884766207f7a17f74ef4d0",
+  "_spec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+  "_where": "C:\\Users\\alexm\\Desktop\\Mohsen",
+  "author": {
+    "name": "Your Name",
+    "email": "yourname@email.com"
+  },
+  "bugs": {
+    "url": "https://github.com/github_account/react-native-snowboy/issues"
+  },
+  "description": "TODO",
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  },
+  "homepage": "https://github.com/github_account/react-native-snowboy#readme",
+  "keywords": [
+    "react-native"
+  ],
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "main": "index.js",
+  "name": "react-native-snowboy",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github_account/react-native-snowboy.git",
+    "baseUrl": "https://github.com/github_account/react-native-snowboy"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "title": "React Native Snowboy",
+  "version": "1.0.0"
+}
