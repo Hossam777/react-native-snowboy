@@ -14,6 +14,8 @@ import android.util.Log;
 import android.os.Handler;
 import android.os.Message;
 
+import android.widget.Toast;
+
 import ai.kitt.snowboy.MsgEnum;
 import ai.kitt.snowboy.audio.AudioDataSaver;
 import ai.kitt.snowboy.audio.RecordingThread;
@@ -42,6 +44,7 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
         // TODO: Implement some actually useful functionality
         callback.invoke("working");
     }
+
     @ReactMethod
     public void initHotword(Promise promise) {
         if (ActivityCompat.checkSelfPermission(reactContext,
@@ -51,6 +54,7 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
             AppResCopy.copyResFromAssetsToSD(reactContext);
 			try {
 				recordingThread = new RecordingThread(new Handler() {
+                    
 					@Override
 					public void handleMessage(Message msg) {
 						MsgEnum message = MsgEnum.getMsgEnum(msg.what);
@@ -60,7 +64,7 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
 							case MSG_ACTIVE:
 								//HOTWORD DETECTED. NOW DO WHATEVER YOU WANT TO DO HERE
 								sendEvent("msg-active", "MSG_ACTIVE");
-								// Log.v(TAG, "MSG_ACTIVE");
+                                // Log.v(TAG, "MSG_ACTIVE");
 								break;
 							case MSG_INFO:
 								sendEvent("msg-info", "MSG_INFO");
@@ -80,6 +84,7 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
 						}
 					}
 				}, new AudioDataSaver());
+                //Toast.makeText(reactContext, "thread created", Toast.LENGTH_SHORT).show();
 				promise.resolve(true);
 			} catch(Exception e) {
 				String errorMessage = e.getMessage();
@@ -115,7 +120,6 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
 	private void sendEvent(String eventName, String msg) {
         WritableMap params = Arguments.createMap();
         params.putString("value", msg);
-
         reactContext
 				.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                 .emit(eventName, params);
