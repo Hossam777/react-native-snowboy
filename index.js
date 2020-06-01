@@ -18,6 +18,12 @@ var Snowboy = {
 	},
 	destroy() {
 		SnowBoy.destroy();
-	}
+	},
+    startService(){
+    SnowBoy.startSnowboyService();
+    },
+    stopService(){
+        SnowBoy.stopSnowboyService();
+    }
 }
 module.exports = Snowboy;
