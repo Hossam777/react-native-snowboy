@@ -6,9 +6,12 @@ import com.facebook.react.bridge.*;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
+
+import android.os.Bundle;
 import android.util.Log;
 
 import android.os.Handler;
@@ -43,6 +46,18 @@ public class SnowboyModule extends ReactContextBaseJavaModule {
     public void sampleMethod(Callback callback) {
         // TODO: Implement some actually useful functionality
         callback.invoke("working");
+    }
+
+    @ReactMethod
+    public void startSnowboyService() {
+        Intent intent = new Intent(reactContext, SnowboyService.class);
+        reactContext.startForegroundService(intent);
+    }
+
+    @ReactMethod
+    public void stopSnowboyService() {
+        Intent intent = new Intent(reactContext, SnowboyService.class);
+        reactContext.stopService(intent);
     }
 
     @ReactMethod
