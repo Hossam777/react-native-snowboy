@@ -75,10 +75,7 @@ public class RecordingThread {
     public void stopRecording() {
         if (thread == null)
             return;
-
         shouldContinue = false;
-        while (thread.isAlive()){
-        }
         thread = null;
     }
 
