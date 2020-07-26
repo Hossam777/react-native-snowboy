@@ -77,6 +77,7 @@ public class RecordingThread {
             return;
 
         shouldContinue = false;
+        thread.stop();
         thread = null;
     }
 
