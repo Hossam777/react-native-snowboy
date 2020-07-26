@@ -5,25 +5,27 @@
       "C:\\Users\\alexm\\Desktop\\Mohsen"
     ]
   ],
-  "_from": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
-  "_id": "react-native-snowboy@git+https://github.com/Gamal-Khaled/react-native-snowboy.git#fbcaaa289ada750657884766207f7a17f74ef4d0",
+  "_from": "git+https://github.com/Hossam777/react-native-snowboy.git",
+  "_id": "react-native-snowboy@1.0.0",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/react-native-snowboy",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
-    "rawSpec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
-    "saveSpec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
-    "fetchSpec": "https://github.com/Gamal-Khaled/react-native-snowboy.git",
+    "raw": "react-native-snowboy@git+https://github.com/Hossam777/react-native-snowboy.git",
+    "name": "react-native-snowboy",
+    "escapedName": "react-native-snowboy",
+    "rawSpec": "git+https://github.com/Hossam777/react-native-snowboy.git",
+    "saveSpec": "git+https://github.com/Hossam777/react-native-snowboy.git",
+    "fetchSpec": "https://github.com/Hossam777/react-native-snowboy.git",
     "gitCommittish": null
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git#fbcaaa289ada750657884766207f7a17f74ef4d0",
-  "_spec": "git+https://github.com/Gamal-Khaled/react-native-snowboy.git",
+  "_resolved": "git+https://github.com/Hossam777/react-native-snowboy.git#4a6da77ad9ec668d24eb3813d43fae7c5c0d1517",
+  "_spec": "react-native-snowboy@git+https://github.com/Hossam777/react-native-snowboy.git",
   "_where": "C:\\Users\\alexm\\Desktop\\Mohsen",
   "author": {
     "name": "Your Name",
@@ -32,6 +34,8 @@
   "bugs": {
     "url": "https://github.com/github_account/react-native-snowboy/issues"
   },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "TODO",
   "devDependencies": {
     "react": "^16.9.0",
