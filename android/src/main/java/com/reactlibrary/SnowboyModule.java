@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.reactlibrary.snowboy;
 
 
 import com.facebook.react.common.ReactConstants;
